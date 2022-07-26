@@ -18,19 +18,7 @@ Youtube Channel <a href="https://www.youtube.com/channel/UCTjQSpx2waqXTC37AgM8qy
 I hope you found this crash course helpful happy coding:)  be you be happy
 
 
-## First Part
-
-<a href="https://www.youtube.com/embed/vYj2ekg4FrQ">Creating Your First Jetpack Compose App (Part 1) </a>
-
-
-## Second Part
-
-<a href="https://www.youtube.com/watch?v=ceNXWC-vtA0">How to create Composables in Jetpack Compose 🚀(Part 2)</a>
-
-
-## Third Part
-
-<a href="https://youtu.be/fZCitd-lRIw">Modifiers - Android Jetpack Compose 🚀(Part 3)</a>
+## Video implementations 
 
 
 
