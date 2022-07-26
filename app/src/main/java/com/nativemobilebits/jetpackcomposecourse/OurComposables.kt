@@ -11,9 +11,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 @Composable
-fun ListViewItem(number: Int) {
+fun ListViewItem(superhero: Superhero) {
 
 
     Column(
@@ -25,21 +26,21 @@ fun ListViewItem(number: Int) {
     ) {
 
         Text(
-            text = "$number",
-            modifier = Modifier.fillMaxWidth(),
+            text = "${superhero.name}",
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(8.dp),
             color = Color.Black,
-            fontWeight = FontWeight.Bold
+            fontWeight = FontWeight.Bold,
+            fontSize = 16.sp
         )
+
         Text(
-            text = "$number",
-            modifier = Modifier.fillMaxWidth(),
-            color = Color.Black,
-            fontWeight = FontWeight.Bold
-        )
-        Text(
-            text = "$number",
-            modifier = Modifier.fillMaxWidth(),
-            color = Color.Black,
+            text = "${superhero.powerScore}",
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(8.dp),
+            color = Color.Blue,
             fontWeight = FontWeight.Bold
         )
     }
