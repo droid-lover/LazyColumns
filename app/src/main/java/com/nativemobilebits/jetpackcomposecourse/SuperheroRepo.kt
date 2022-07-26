@@ -2,6 +2,9 @@ package com.nativemobilebits.jetpackcomposecourse
 
 object SuperheroRepo {
 
+    val TEAM_IRONMAN = "Team Ironman"
+    val TEAM_CAPTAIN_AMERICA = "Team Captain America"
+
     fun getSuperheros(): List<Superhero> {
         return listOf<Superhero>(
             Superhero(
@@ -27,6 +30,15 @@ object SuperheroRepo {
             Superhero(
                 name = "James War Machine",
                 powerScore = 67,
+                team = "Team Ironman"
+            ),
+            Superhero(
+                name = "Spider Man",
+                powerScore = 91,
+                team = "Team Ironman"
+            ), Superhero(
+                name = "Nick Fury",
+                powerScore = 101,
                 team = "Team Ironman"
             ),
             Superhero(

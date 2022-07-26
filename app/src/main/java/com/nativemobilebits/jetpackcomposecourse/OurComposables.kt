@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -45,4 +46,24 @@ fun ListViewItem(superhero: Superhero) {
         )
     }
 
+}
+
+
+@Composable
+fun TeamStickyHeader(teamName: String) {
+    Surface(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(Color.DarkGray)
+            .padding(12.dp)
+    ) {
+        Text(
+            modifier = Modifier
+                .background(Color.DarkGray),
+            text = teamName,
+            color = Color.White,
+            fontWeight = FontWeight.Bold,
+            fontSize = 18.sp
+        )
+    }
 }
