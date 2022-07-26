@@ -22,14 +22,16 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun List(){
-    val values = listOf<Int>(1,2,3,4,5,6,7,8,9,10,11,12,13,14,1,2,3,4,5,6,7,8,9,10,11,12,13,14)
-    LazyColumn (
+fun List() {
+    val superheros = SuperheroRepo.getSuperheros()
+
+    LazyColumn(
         contentPadding = PaddingValues(all = 12.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp)
-            ){
-        items(values){ number->
-            ListViewItem(number)
+    ) {
+
+        items(superheros){ superhero ->
+            ListViewItem(superhero = superhero)
         }
     }
 }
